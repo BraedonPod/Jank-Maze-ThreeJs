@@ -1,0 +1,164 @@
+
+.bottom, .top, .back, .front, .left, .right, car, wheel, collisionpoint {
+	position: absolute;
+	width: 100px;
+	height: 200px;
+	box-sizing: border-box;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	image-rendering: pixelated;
+	z-index: 10;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	background: #000;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+
+.bottom {
+	background: silver;
+	background-position: -400px -2900px;
+	width: 100px;
+	height: 100px;
+}
+.bottom.r {
+	background: silver;
+	background-position: -1800px -3000px;
+}
+.bottom.g {/*END*/
+	background: red;
+	background-position: 0 -1600px;
+}
+.bottom.w {/*START*/
+	background: skyblue;
+	background-position: -100px -1900px;
+}
+
+.top {
+	background: dimgrey;
+	background-position: -2900px -900px;
+	width: 100px;
+	height: 100px;
+}
+
+.back {
+	background: white;
+	background-position: 0 -800px;
+}
+
+.front {
+	background: darkgrey;
+	background-position: 0 -800px;
+}
+
+.left {
+	background: lightgrey;
+	background-position: -200px -800px;
+}
+
+.right {
+	background: grey;
+	background-position: -200px -800px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	padding: 10px;
+	color: white;
+	text-shadow: 1px 1px 4px #000000;
+	z-index: 99999999999;
+}
+footer a {
+	color: skyblue;
+	text-decoration: none;
+}
+footer a:hover {
+	text-decoration: none;
+}
+
+car {
+/* 	background: black; */
+	background: url(car.png);
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	transform: rotate(-10deg); 
+	background-size: 25px 25px;
+
+	width: 25px;
+	height: 25px;
+	z-index: 10;
+}
+
+wheel {
+	   background: black; 
+	background: transparent;
+	width: 5px;
+	height: 10px;
+	/*box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;*/
+}
+
+collisionpoint {
+	background: green;
+	width: 5px;
+	height: 5px;
+}
+
+canvas {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	z-index: 0;
+}
+
+.wrapper {
+	z-index: 99999999999;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 400px;
+	margin-top: -200px;
+	overflow: hidden;
+}
+
+.wrap {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 80px 0;
+	height: 400px;
+	text-align: center;
+}
+
+h1 {
+	color: skyblue;
+	text-shadow: 2px 2px #000000;
+}
+
+input{
+	appearance: none;
+	outline: 0;
+	background-color: white;
+	border: 0;
+	padding: 10px 15px;
+	color: skyblue;
+	border-radius: 3px;
+	width: 250px;
+	cursor: pointer;
+	font-size: 18px;
+	transition-duration: 0.25s;
+	box-shadow: 4px 4px 5px #000000;
+}
